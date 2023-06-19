@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+int main() {
+int nilai; int NIM;
+string nama;
+string grade; string keterangan;
+cout<<"Masukan NIM ";
+cin>>NIM;
+cout<<"Masukan Nama ";
+cin>>nama;
+cout<<"Masukan Nilai ";
+cin>>nilai;
+
+if (nilai >=80) {
+grade="A";
+} else if (nilai >=70) {
+grade="B";
+} else if (nilai >=60) {
+grade="C";
+} else if (nilai >=50) {
+grade="D";
+} else {
+grade="E";
+}
+cout<<endl;
+if (grade=="A" || grade=="B" || grade=="C") {
+keterangan="Lulus";
+} else if(grade=="D"){
+keterangan="mengulang";
+} else{
+keterangan="Tidak Lulus";
+}
+cout<<"NIM Nama Nilai Grade Status"<<endl;
+cout<<" "<<endl;
+cout<<NIM;
+cout<<" "<<nama;
+cout<<" "<<nilai;
+cout<<" "<<grade;
+cout<<" "<<keterangan;
+}
